@@ -1,4 +1,12 @@
 # Starter pipeline
+- task: BeanstalkDeployApplication@1
+  inputs:
+    awsCredentials: 'azure'
+    regionName: 'ap-southeast-1'
+    applicationName: 'azure demo'
+    environmentName: 'Azuredemo-env'
+    applicationType: 'version'
+    versionLabel: 'Sample Application'
 # Start with a minimal pipeline that you can customize to build and deploy your code.
 # Add steps that build, run tests, deploy, and more:
 # https://aka.ms/yaml
